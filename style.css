@@ -1,0 +1,25 @@
+.ball{
+    border: 2px solid black;
+    border-radius: 100%;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+#cor1{
+    background-color: rgb(10, 10, 10);
+}
+#cor2{
+    background-color: rgb(10, 10, 10);
+}
+#cor3{
+    background-color: rgb(10, 10, 10);
+}
+#cor4{
+    background-color: rgb(10, 10, 10);
+}
+#cor5{
+    background-color: rgb(10, 10, 10);
+}
+#cor6{
+    background-color: rgb(10, 10, 10);
+}
