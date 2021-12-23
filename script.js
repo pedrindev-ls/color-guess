@@ -11,6 +11,8 @@ function roletandoCores(event){
     let corQueGanha = Math.floor(Math.random()*7);
     ganhador = corQueGanha
     let grupo = document.getElementsByClassName('ball')
+    let comemo = document.getElementById('answer')
+    //comemo.innerText = 'Escolha uma cor'
         for(let i = 0; i < grupo.length; i++){
             let cor1 = Math.floor(Math.random()*255)+1;
             let cor2 = Math.floor(Math.random()*255)+1;
@@ -33,72 +35,72 @@ let altF = document.getElementById('cor6')
 
 altA.addEventListener('click', function(event){
     let grupo = document.getElementsByClassName('ball')
-    let comemo = document.getElementById('legenda')
+    let comemo = document.getElementById('answer')
     if(altA === grupo[ganhador]){
         comemo.innerText = 'Acertou!'
         roletandoCores(); //https://pt.stackoverflow.com/questions/52162/if-else-com-fun%C3%A7%C3%B5es
     } else {
-        comemo.innerText = 'Errou!'
+        comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
 })
 
 altB.addEventListener('click', function(event){
     let grupo = document.getElementsByClassName('ball')
-    let comemo = document.getElementById('legenda')
+    let comemo = document.getElementById('answer')
     if(altB === grupo[ganhador]){
         comemo.innerText = 'Acertou!'
         roletandoCores();
     } else {
-        comemo.innerText = 'Errou!'
+        comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
 })
 
 altC.addEventListener('click', function(event){
     let grupo = document.getElementsByClassName('ball')
-    let comemo = document.getElementById('legenda')
+    let comemo = document.getElementById('answer')
     if(altC === grupo[ganhador]){
         comemo.innerText = 'Acertou!'
         roletandoCores();
     } else {
-        comemo.innerText = 'Errou!'
+        comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
 })
 
 altD.addEventListener('click', function(event){
     let grupo = document.getElementsByClassName('ball')
-    let comemo = document.getElementById('legenda')
+    let comemo = document.getElementById('answer')
     if(altD === grupo[ganhador]){
         comemo.innerText = 'Acertou!'
         roletandoCores();
     } else {
-        comemo.innerText = 'Errou!'
+        comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
 })
 
 altE.addEventListener('click', function(event){
     let grupo = document.getElementsByClassName('ball')
-    let comemo = document.getElementById('legenda')
+    let comemo = document.getElementById('answer')
     if(altE === grupo[ganhador]){
         comemo.innerText = 'Acertou!'
         roletandoCores();
     } else {
-        comemo.innerText = 'Errou!'
+        comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
 })
 
 altF.addEventListener('click', function(event){
     let grupo = document.getElementsByClassName('ball')
-    let comemo = document.getElementById('legenda')
+    let comemo = document.getElementById('answer')
     if(altF === grupo[ganhador]){
         comemo.innerText = 'Acertou!'
         roletandoCores();
     } else {
-        comemo.innerText = 'Errou!'
+        comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
 })
