@@ -1,36 +1,28 @@
-//https://www.w3schools.com/html/html5_webstorage.asp
-// onload = function(){
-//     if (typeof(Storage) !== "undefined") {
-//         localStorage.setItem("acertos", 0);
-//         document.getElementById("numero-acertos").innerHTML = localStorage.getItem("acertos");
-//     } else {
-//         document.getElementById("numero-acertos").innerHTML = "Sorry, your browser does not support Web Storage...";
-//     }
-// }
-// onload = function ligando(){
-//     if (localStorage.count >= 1){
-//         localStorage.setItem('acertos', 0)
-//     } else {
-//     let numero = document.getElementById('numero-acertos')
-//     numero.innerText = localStorage.getItem('acertos')
-//     }
-// }
 //https://pt.stackoverflow.com/questions/59915/como-chamar-uma-vari%C3%A1vel-do-js-para-um-h1-do-html
+
+let numeroDeAcertos = 0 //novo
+
+window.onload = function(){
+    let numero = document.getElementById('numero-acertos')
+    const armazenamento = localStorage.getItem('acertos')
+    if (armazenamento){
+        numeroDeAcertos = +armazenamento
+    }
+    numero.innerText = numeroDeAcertos
+}
+
+
 let cores = document.getElementById('rgb-color')
 cores.innerText = '(0, 0, 0)'
 
 let botao = document.getElementById('reset-game');
 let ganhador = 0;
 
-let numeroDeAcertos = 0 //novo
-
 
 function storage(){//novo
     let numero = document.getElementById('numero-acertos')
-    let contagem = localStorage.getItem('acertos')
     numeroDeAcertos = numeroDeAcertos + 1
-    contagem = contagem + numeroDeAcertos
-    numero.innerText = contagem
+    numero.innerText = numeroDeAcertos
 }
 
 function roletandoCores(event){
@@ -71,6 +63,8 @@ altA.addEventListener('click', function(event){
         comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
+    localStorage.removeItem('acertos')
+    localStorage.setItem('acertos', numero.innerText)
 })
 
 altB.addEventListener('click', function(event){
@@ -85,6 +79,8 @@ altB.addEventListener('click', function(event){
         comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
+    localStorage.removeItem('acertos')
+    localStorage.setItem('acertos', numero.innerText)
 })
 
 altC.addEventListener('click', function(event){
@@ -99,6 +95,8 @@ altC.addEventListener('click', function(event){
         comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
+    localStorage.removeItem('acertos')
+    localStorage.setItem('acertos', numero.innerText)
 })
 
 altD.addEventListener('click', function(event){
@@ -113,6 +111,8 @@ altD.addEventListener('click', function(event){
         comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
+    localStorage.removeItem('acertos')
+    localStorage.setItem('acertos', numero.innerText)
 })
 
 altE.addEventListener('click', function(event){
@@ -127,6 +127,8 @@ altE.addEventListener('click', function(event){
         comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
+    localStorage.removeItem('acertos')
+    localStorage.setItem('acertos', numero.innerText)
 })
 
 altF.addEventListener('click', function(event){
@@ -141,4 +143,6 @@ altF.addEventListener('click', function(event){
         comemo.innerText = 'Errou! Tente novamente!'
         roletandoCores();
     }
+    localStorage.removeItem('acertos')
+    localStorage.setItem('acertos', numero.innerText)
 })
