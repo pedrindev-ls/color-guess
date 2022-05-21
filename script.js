@@ -1,5 +1,3 @@
-//https://pt.stackoverflow.com/questions/59915/como-chamar-uma-vari%C3%A1vel-do-js-para-um-h1-do-html
-
 let numeroDeAcertos = 0 //novo
 
 window.onload = function(){
@@ -19,14 +17,14 @@ let botao = document.getElementById('reset-game');
 let ganhador = 0;
 
 
-function storage(){//novo
+function storage(){
     let numero = document.getElementById('numero-acertos')
     numeroDeAcertos = numeroDeAcertos + 1
     numero.innerText = numeroDeAcertos
 }
 
 function roletandoCores(event){
-    let corQueGanha = Math.floor(Math.random()*7);
+    let corQueGanha = Math.floor(Math.random()*6);
     ganhador = corQueGanha
     let grupo = document.getElementsByClassName('ball')
     let comemo = document.getElementById('answer')
