@@ -1,31 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+  --bs-body-bg: aquamarine;
+}
+
 .ball{
-    border: 2px solid black;
-    border-radius: 100%;
-    display: inline-block;
-    height: 40px;
-    width: 40px;
+  border: 2px solid black;
+  border-radius: 100%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
 }
 #cor1{
-    background-color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
 }
 #cor2{
-    background-color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
 }
 #cor3{
-    background-color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
 }
 #cor4{
-    background-color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
 }
 #cor5{
-    background-color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
 }
 #cor6{
-    background-color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
 }
 .acertos{
-    display: inline-block;
+  display: inline-block;
 }
 #reset-game{
-    display: block;
+  display: block;
+}
+
+main {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 2%;
+  width: 50%;
+  justify-content: center;
+  position: absolute;
+  top: 27%;
+  border-radius: 8px;
+}
+
+main h1 {
+  background-color: aliceblue;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+main .top-info {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+main .choose-info {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+main .rank-info {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+main #reset-game {
+  border-radius: 6px;
+  border: 2px solid lightgray;
 }
